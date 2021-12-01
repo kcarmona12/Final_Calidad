@@ -1,0 +1,32 @@
+﻿@{ Layout = null;
+    var cuenta = (Cuenta)Model; }
+
+<div class="row">
+    <div class="col-6">
+        <form action="/crud/registrar" id="createPrueba" onsubmit="guardarCuenta(event)" method="post">
+
+            <div class="form-group">
+                <label>Tipo</label>
+                <select id="tipope" name="TypeId" class="form-control">
+                    <option value="">-- Selecciona una opcion --</option>
+                    @foreach (var item in ViewBag.Types)
+                    {
+                        <option value="@item.Id">@item.Name</option>
+                    }
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label>Nombre</label>
+                <input id="nombrepe" class="form-control" name="Name" value="@Model.Name" />
+                @Html.ValidationMessage("Name")
+            </div>
+
+            <div class="form-group">
+                <label>Saldo Inicial</label>
+                <input id="montope" class="form-control" name="Amount" value="@Model.Amount" />
+                @Html.ValidationMessage("Amount")
+            </div>
+        </form>
+    </div>
+</div>

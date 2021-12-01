@@ -1,0 +1,106 @@
+﻿@{
+    List<Cuenta> cuentitas = ((List<Cuenta>)Model);
+}
+<h1>Lista de cuentas</h1>
+<h5>Monto total: @string.Format("{0:N2}", ViewBag.Total) S./</h5>
+<br />
+<a id="link" href="#" data-toggle="modal" data-target="#createCuentaModal" class="btn btn-primary">Crear Cuenta</a>
+<br />
+<br />
+<div class="row">
+    <div class="col">
+        <table id="tabla" class="table">
+            <thead class="text-center">
+                <tr>
+                    <th>Tipo</th>
+                    <th>Nombre</th>
+                    <th>Saldo</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody class="text-center">
+                @foreach (var item in cuentitas)
+                {
+                    <tr>
+                        <td>@item.Tipo.Name</td>
+                        <td>@item.Name</td>
+                        <td class="text-center">
+                            @if (item.TypeId == 2)
+                            {
+                                @string.Format("{0:N2}", item.Limite)
+                                <br />
+                            }
+                            @string.Format("{0:N2}", item.Amount) S/.
+
+                        </td>
+                        <td>
+                            <a href="/transaccion/index?id=@item.Id">Transaccion</a>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+
+    </div>
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="createCuentaModal" tabindex="-1" aria-labelledby="createCuentaModal" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Crear Cuenta</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body" id="crearM">
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
+                <button type="button" class="btn btn-primary" onclick="submitForm()">Guardar</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+@section Scripts {
+    @*Se puede pasar asi como aca:*@
+    <script src="~/js/MiExample.js"></script>
+
+    <script>
+        $.ajax({
+            'url': '/crud/Registrar',
+            'type': 'get'
+        }).done(function (html) {
+            $('#crearM').html(html);
+        })
+
+        function submitForm() {
+            $('#createPrueba').submit(); // aca busco y ejecuto el id del formulario, directamente
+            //$('#createCuentaModal form').submit(); // con esta funcion, busco en el modal en el formulario y envio
+        }
+
+        function guardarCuenta(event) {
+            var dataString = new FormData($('#createCuentaModal form')[0]);
+            event.preventDefault();
+            var data1 = $('#createCuentaModal form').serialize();
+            $.ajax({
+                url: "/crud/Registrar",
+                type: "post",
+                processData: false,  // Important!
+                contentType: false,
+                cache: false,
+                data: dataString
+            }).done(function (html) {
+                location.reload();
+            }).fail(function (html) {
+                $('#crearM').html(html.responseText);
+            });
+        }
+
+    </script>
+
+
+}

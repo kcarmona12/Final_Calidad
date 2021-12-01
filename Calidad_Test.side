@@ -1,0 +1,576 @@
+{
+  "id": "7c45f9f6-3cf6-42f0-a7d6-5e019c0552b5",
+  "version": "2.0",
+  "name": "Calidad_Test",
+  "url": "https://localhost:44315/Home/",
+  "tests": [{
+    "id": "82f50327-929a-4422-af52-8ec4b10ab10e",
+    "name": "CrearCuenta",
+    "commands": [{
+      "id": "c27e1da2-2066-4836-9151-f292716a6f4b",
+      "comment": "",
+      "command": "open",
+      "target": "https://localhost:44315/Home/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "5870fcf9-7536-4a18-9a4e-ed4f6810697e",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "814x860",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "2a9a43f9-ff8d-41c5-81e7-938499847c59",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Crud",
+      "targets": [
+        ["linkText=Crud", "linkText"],
+        ["css=.nav-item:nth-child(3) > .nav-link", "css:finder"],
+        ["xpath=//a[contains(text(),'Crud')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/Crud')]", "xpath:href"],
+        ["xpath=//li[3]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Crud')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "bb4763d6-e490-4225-831a-5e845e6a6131",
+      "comment": "",
+      "command": "click",
+      "target": "id=link",
+      "targets": [
+        ["id=link", "id"],
+        ["linkText=Crear Cuenta", "linkText"],
+        ["css=#link", "css:finder"],
+        ["xpath=//a[contains(text(),'Crear Cuenta')]", "xpath:link"],
+        ["xpath=//a[@id='link']", "xpath:attributes"],
+        ["xpath=//a[contains(@href, '#')]", "xpath:href"],
+        ["xpath=//main/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Crear Cuenta')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "e71a7c17-288f-4461-b473-be0e7d8baa49",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "id=link",
+      "targets": [
+        ["id=link", "id"],
+        ["linkText=Crear Cuenta", "linkText"],
+        ["css=#link", "css:finder"],
+        ["xpath=//a[contains(text(),'Crear Cuenta')]", "xpath:link"],
+        ["xpath=//a[@id='link']", "xpath:attributes"],
+        ["xpath=//a[contains(@href, '#')]", "xpath:href"],
+        ["xpath=//main/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Crear Cuenta')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "fc794c16-0af0-4115-8235-a5224fafd4c1",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "id=link",
+      "targets": [
+        ["id=link", "id"],
+        ["linkText=Crear Cuenta", "linkText"],
+        ["css=#link", "css:finder"],
+        ["xpath=//a[contains(text(),'Crear Cuenta')]", "xpath:link"],
+        ["xpath=//a[@id='link']", "xpath:attributes"],
+        ["xpath=//a[contains(@href, '#')]", "xpath:href"],
+        ["xpath=//main/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Crear Cuenta')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "f347952f-9aa8-49c2-a705-5edf888a6cbe",
+      "comment": "",
+      "command": "click",
+      "target": "id=tipope",
+      "targets": [
+        ["id=tipope", "id"],
+        ["name=TypeId", "name"],
+        ["css=#tipope", "css:finder"],
+        ["xpath=//select[@id='tipope']", "xpath:attributes"],
+        ["xpath=//form[@id='createPrueba']/div/select", "xpath:idRelative"],
+        ["xpath=//select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c8b8c09b-f55d-457c-a5bb-1730e3b7a959",
+      "comment": "",
+      "command": "select",
+      "target": "id=tipope",
+      "targets": [],
+      "value": "label=Credito"
+    }, {
+      "id": "690704a8-0694-40ee-b3ea-eaae01acafec",
+      "comment": "",
+      "command": "click",
+      "target": "id=nombrepe",
+      "targets": [
+        ["id=nombrepe", "id"],
+        ["name=Name", "name"],
+        ["css=#nombrepe", "css:finder"],
+        ["xpath=//input[@id='nombrepe']", "xpath:attributes"],
+        ["xpath=//form[@id='createPrueba']/div[2]/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f38d9dea-5571-4dc0-80da-bcffadd7e2e0",
+      "comment": "",
+      "command": "click",
+      "target": "id=nombrepe",
+      "targets": [
+        ["id=nombrepe", "id"],
+        ["name=Name", "name"],
+        ["css=#nombrepe", "css:finder"],
+        ["xpath=//input[@id='nombrepe']", "xpath:attributes"],
+        ["xpath=//form[@id='createPrueba']/div[2]/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d92fc26d-d303-42ac-b2df-fb5e51670a97",
+      "comment": "",
+      "command": "type",
+      "target": "id=nombrepe",
+      "targets": [
+        ["id=nombrepe", "id"],
+        ["name=Name", "name"],
+        ["css=#nombrepe", "css:finder"],
+        ["xpath=//input[@id='nombrepe']", "xpath:attributes"],
+        ["xpath=//form[@id='createPrueba']/div[2]/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "KENNY"
+    }, {
+      "id": "30e3daea-ae54-477f-8bda-019fe854a0ca",
+      "comment": "",
+      "command": "type",
+      "target": "id=montope",
+      "targets": [
+        ["id=montope", "id"],
+        ["name=Amount", "name"],
+        ["css=#montope", "css:finder"],
+        ["xpath=//input[@id='montope']", "xpath:attributes"],
+        ["xpath=//form[@id='createPrueba']/div[3]/input", "xpath:idRelative"],
+        ["xpath=//div[3]/input", "xpath:position"]
+      ],
+      "value": "1850000"
+    }, {
+      "id": "79a78648-7f70-45eb-8d4e-2c5a873b0f6d",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn:nth-child(2)",
+      "targets": [
+        ["css=.btn:nth-child(2)", "css:finder"],
+        ["xpath=(//button[@type='button'])[4]", "xpath:attributes"],
+        ["xpath=//div[@id='createCuentaModal']/div/div/div[3]/button[2]", "xpath:idRelative"],
+        ["xpath=//button[2]", "xpath:position"],
+        ["xpath=//button[contains(.,'Guardar')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "b60513df-281d-4834-b7fd-a9818ae006af",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "4a703f19-8102-41f0-bc31-efd5aac4bfc9",
+    "name": "CrearTransaccionIngreso",
+    "commands": [{
+      "id": "fc83895a-8d89-43b8-bed1-d5d3ac372f7d",
+      "comment": "",
+      "command": "open",
+      "target": "https://localhost:44315/Home/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "0baa82c1-6a3b-45b5-bb1a-b471de6272b9",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "814x860",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "f909ede4-8dd8-45d9-a12d-f379475b03bd",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Crud",
+      "targets": [
+        ["linkText=Crud", "linkText"],
+        ["css=.nav-item:nth-child(3) > .nav-link", "css:finder"],
+        ["xpath=//a[contains(text(),'Crud')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/Crud')]", "xpath:href"],
+        ["xpath=//li[3]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Crud')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "f9c2af56-a9e2-43aa-adf5-3ef469358c35",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Transaccion",
+      "targets": [
+        ["linkText=Transaccion", "linkText"],
+        ["css=tr:nth-child(1) a", "css:finder"],
+        ["xpath=//a[contains(text(),'Transaccion')]", "xpath:link"],
+        ["xpath=//table[@id='tabla']/tbody/tr/td[4]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/transaccion/index?id=1')]", "xpath:href"],
+        ["xpath=//td[4]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Transaccion')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "afc66b6a-7dbb-4047-a819-b483dece40bb",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Registrar transaccion",
+      "targets": [
+        ["linkText=Registrar transaccion", "linkText"],
+        ["css=.button", "css:finder"],
+        ["xpath=//a[contains(text(),'Registrar transaccion')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/transaccion/crear?id=1')]", "xpath:href"],
+        ["xpath=//main/div/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Registrar transaccion')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "63e4db86-371a-43f9-824a-67d5c761987d",
+      "comment": "",
+      "command": "click",
+      "target": "name=Tipo",
+      "targets": [
+        ["name=Tipo", "name"],
+        ["css=.form-group:nth-child(4) > .form-control", "css:finder"],
+        ["xpath=//select[@name='Tipo']", "xpath:attributes"],
+        ["xpath=//select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c26e0821-194e-4b87-835d-ba5c3bca056b",
+      "comment": "",
+      "command": "select",
+      "target": "name=Tipo",
+      "targets": [],
+      "value": "label=Ingreso"
+    }, {
+      "id": "3b6cb08a-1664-4adb-a9eb-772c75cff49e",
+      "comment": "",
+      "command": "click",
+      "target": "name=FechaHora",
+      "targets": [
+        ["name=FechaHora", "name"],
+        ["css=.form-group:nth-child(5) > .form-control", "css:finder"],
+        ["xpath=//input[@name='FechaHora']", "xpath:attributes"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "2d19c28b-619d-4574-b9e3-c8050a60413b",
+      "comment": "",
+      "command": "type",
+      "target": "name=FechaHora",
+      "targets": [
+        ["name=FechaHora", "name"],
+        ["css=.form-group:nth-child(5) > .form-control", "css:finder"],
+        ["xpath=//input[@name='FechaHora']", "xpath:attributes"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "2021-11-30T03:37"
+    }, {
+      "id": "597153ab-b0b1-43d0-9d54-674315618e49",
+      "comment": "",
+      "command": "click",
+      "target": "css=.col-6",
+      "targets": [
+        ["css=.col-6", "css:finder"],
+        ["xpath=//main/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "91d9862d-ad1e-47ec-8fc3-0a1ea9110979",
+      "comment": "",
+      "command": "click",
+      "target": "name=Motivo",
+      "targets": [
+        ["name=Motivo", "name"],
+        ["css=.text", "css:finder"],
+        ["xpath=//input[@name='Motivo']", "xpath:attributes"],
+        ["xpath=//div[3]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "34c15e42-37de-4609-8a67-5477b153efd7",
+      "comment": "",
+      "command": "type",
+      "target": "name=Motivo",
+      "targets": [
+        ["name=Motivo", "name"],
+        ["css=.text", "css:finder"],
+        ["xpath=//input[@name='Motivo']", "xpath:attributes"],
+        ["xpath=//div[3]/input", "xpath:position"]
+      ],
+      "value": "Estoy de plata"
+    }, {
+      "id": "119bce29-d79f-478b-a3bf-6c0162eb67ed",
+      "comment": "",
+      "command": "click",
+      "target": "name=Amount",
+      "targets": [
+        ["name=Amount", "name"],
+        ["css=.form-group:nth-child(7) > .form-control", "css:finder"],
+        ["xpath=//input[@name='Amount']", "xpath:attributes"],
+        ["xpath=//div[4]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "bcc6a19d-e859-4737-a0ad-a3e0403fef5d",
+      "comment": "",
+      "command": "type",
+      "target": "name=Amount",
+      "targets": [
+        ["name=Amount", "name"],
+        ["css=.form-group:nth-child(7) > .form-control", "css:finder"],
+        ["xpath=//input[@name='Amount']", "xpath:attributes"],
+        ["xpath=//div[4]/input", "xpath:position"]
+      ],
+      "value": "85000"
+    }, {
+      "id": "757b354d-58e7-4893-85a6-acb1b29a606a",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn",
+      "targets": [
+        ["css=.btn", "css:finder"],
+        ["xpath=//form/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Guardar')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "b73e7949-8a36-48de-8b4d-bfee6759945a",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "8f931680-190e-46fd-807c-a4d88dff5050",
+    "name": "CrearEgreso",
+    "commands": [{
+      "id": "962dd57d-0a68-4276-89b2-385e75af5f90",
+      "comment": "",
+      "command": "open",
+      "target": "https://localhost:44315/Home/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "093c8d23-1aaf-46ea-92b0-cb8569a7d780",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "814x860",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "eff337a8-f2ae-4639-8a7c-5a9c58ec7180",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Crud",
+      "targets": [
+        ["linkText=Crud", "linkText"],
+        ["css=.nav-item:nth-child(3) > .nav-link", "css:finder"],
+        ["xpath=//a[contains(text(),'Crud')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/Crud')]", "xpath:href"],
+        ["xpath=//li[3]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Crud')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "b2679448-5c25-4cb5-8c61-b8ef7eabe405",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Transaccion",
+      "targets": [
+        ["linkText=Transaccion", "linkText"],
+        ["css=tr:nth-child(1) a", "css:finder"],
+        ["xpath=//a[contains(text(),'Transaccion')]", "xpath:link"],
+        ["xpath=//table[@id='tabla']/tbody/tr/td[4]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/transaccion/index?id=1')]", "xpath:href"],
+        ["xpath=//td[4]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Transaccion')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "866ff88f-181b-46cf-8f76-d82b1da1d91f",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Registrar transaccion",
+      "targets": [
+        ["linkText=Registrar transaccion", "linkText"],
+        ["css=.button", "css:finder"],
+        ["xpath=//a[contains(text(),'Registrar transaccion')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/transaccion/crear?id=1')]", "xpath:href"],
+        ["xpath=//main/div/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Registrar transaccion')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "9b85068b-1e51-4c77-b15f-8fdfc43dd483",
+      "comment": "",
+      "command": "click",
+      "target": "css=form",
+      "targets": [
+        ["css=form", "css:finder"],
+        ["xpath=//form[@action='/transaccion/crear']", "xpath:attributes"],
+        ["xpath=//form", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "2c70ef82-0164-4282-92de-5947a7784710",
+      "comment": "",
+      "command": "click",
+      "target": "name=Tipo",
+      "targets": [
+        ["name=Tipo", "name"],
+        ["css=.form-group:nth-child(4) > .form-control", "css:finder"],
+        ["xpath=//select[@name='Tipo']", "xpath:attributes"],
+        ["xpath=//select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "951ff2f3-6bad-4ed5-a6d6-8644126fd383",
+      "comment": "",
+      "command": "select",
+      "target": "name=Tipo",
+      "targets": [],
+      "value": "label=Gasto"
+    }, {
+      "id": "507be8cf-8da5-4b7c-ade5-dd4f096525ab",
+      "comment": "",
+      "command": "click",
+      "target": "name=FechaHora",
+      "targets": [
+        ["name=FechaHora", "name"],
+        ["css=.form-group:nth-child(5) > .form-control", "css:finder"],
+        ["xpath=//input[@name='FechaHora']", "xpath:attributes"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "1c56c81c-f940-433b-aaf7-963f52f31655",
+      "comment": "",
+      "command": "click",
+      "target": "name=FechaHora",
+      "targets": [
+        ["name=FechaHora", "name"],
+        ["css=.form-group:nth-child(5) > .form-control", "css:finder"],
+        ["xpath=//input[@name='FechaHora']", "xpath:attributes"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "3c12354e-1f60-4c03-89c8-0be66c1c2b75",
+      "comment": "",
+      "command": "type",
+      "target": "name=FechaHora",
+      "targets": [
+        ["name=FechaHora", "name"],
+        ["css=.form-group:nth-child(5) > .form-control", "css:finder"],
+        ["xpath=//input[@name='FechaHora']", "xpath:attributes"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "2021-11-29T03:38"
+    }, {
+      "id": "41784220-fa20-45da-a1f5-2120b289bdff",
+      "comment": "",
+      "command": "click",
+      "target": "css=html",
+      "targets": [
+        ["css=html", "css:finder"],
+        ["xpath=//html", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "8c04ecde-e752-45dd-992f-ee320e32ac6e",
+      "comment": "",
+      "command": "click",
+      "target": "css=.form-group:nth-child(6)",
+      "targets": [
+        ["css=.form-group:nth-child(6)", "css:finder"],
+        ["xpath=//div[3]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f720aca3-5e78-46f7-8072-67ee5ef57bb5",
+      "comment": "",
+      "command": "click",
+      "target": "name=Motivo",
+      "targets": [
+        ["name=Motivo", "name"],
+        ["css=.text", "css:finder"],
+        ["xpath=//input[@name='Motivo']", "xpath:attributes"],
+        ["xpath=//div[3]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c9be530d-08d3-4179-afda-f1f2d2f72e33",
+      "comment": "",
+      "command": "type",
+      "target": "name=Motivo",
+      "targets": [
+        ["name=Motivo", "name"],
+        ["css=.text", "css:finder"],
+        ["xpath=//input[@name='Motivo']", "xpath:attributes"],
+        ["xpath=//div[3]/input", "xpath:position"]
+      ],
+      "value": "Hello word"
+    }, {
+      "id": "79b42299-5a89-4b2a-a235-aafd873bec5a",
+      "comment": "",
+      "command": "type",
+      "target": "name=Amount",
+      "targets": [
+        ["name=Amount", "name"],
+        ["css=.form-group:nth-child(7) > .form-control", "css:finder"],
+        ["xpath=//input[@name='Amount']", "xpath:attributes"],
+        ["xpath=//div[4]/input", "xpath:position"]
+      ],
+      "value": "20"
+    }, {
+      "id": "01f2c162-ee9b-491c-a179-9eca94c1523a",
+      "comment": "",
+      "command": "sendKeys",
+      "target": "name=Amount",
+      "targets": [
+        ["name=Amount", "name"],
+        ["css=.form-group:nth-child(7) > .form-control", "css:finder"],
+        ["xpath=//input[@name='Amount']", "xpath:attributes"],
+        ["xpath=//div[4]/input", "xpath:position"]
+      ],
+      "value": "${KEY_ENTER}"
+    }, {
+      "id": "4df46b07-b08d-406a-8d16-73942a43e3d5",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "b9961c60-16b0-4cf2-b925-6b8ad8c27d32",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": []
+  }],
+  "urls": [],
+  "plugins": []
+}

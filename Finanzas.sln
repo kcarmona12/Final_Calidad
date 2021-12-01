@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31912.275
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Finanzas", "Finanzas\Finanzas.csproj", "{BDE1D708-B5DE-4922-9C33-D98A67739C9E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Finanzas_Test", "Finanzas_Test\Finanzas_Test.csproj", "{4B16BEED-AD53-45B6-95EB-D5E948045EDC}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BDE1D708-B5DE-4922-9C33-D98A67739C9E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BDE1D708-B5DE-4922-9C33-D98A67739C9E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BDE1D708-B5DE-4922-9C33-D98A67739C9E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BDE1D708-B5DE-4922-9C33-D98A67739C9E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4B16BEED-AD53-45B6-95EB-D5E948045EDC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4B16BEED-AD53-45B6-95EB-D5E948045EDC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4B16BEED-AD53-45B6-95EB-D5E948045EDC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4B16BEED-AD53-45B6-95EB-D5E948045EDC}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {31DD8EDC-9B27-45C8-A445-AC0248281976}
+	EndGlobalSection
+EndGlobal
