@@ -21,17 +21,17 @@
       "targets": [],
       "value": ""
     }, {
-      "id": "2a9a43f9-ff8d-41c5-81e7-938499847c59",
+      "id": "61150117-5848-4470-aadb-6cb9bb1cb9a2",
       "comment": "",
       "command": "click",
-      "target": "linkText=Crud",
+      "target": "linkText=CUENTAS",
       "targets": [
-        ["linkText=Crud", "linkText"],
-        ["css=.nav-item:nth-child(3) > .nav-link", "css:finder"],
-        ["xpath=//a[contains(text(),'Crud')]", "xpath:link"],
-        ["xpath=//a[contains(@href, '/Crud')]", "xpath:href"],
-        ["xpath=//li[3]/a", "xpath:position"],
-        ["xpath=//a[contains(.,'Crud')]", "xpath:innerText"]
+        ["linkText=CUENTAS", "linkText"],
+        ["css=.btn", "css:finder"],
+        ["xpath=//a[contains(text(),'CUENTAS')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/CRUD/Index')]", "xpath:href"],
+        ["xpath=//main/a", "xpath:position"],
+        ["xpath=//a[contains(.,'CUENTAS')]", "xpath:innerText"]
       ],
       "value": ""
     }, {
@@ -198,17 +198,17 @@
       "targets": [],
       "value": ""
     }, {
-      "id": "f909ede4-8dd8-45d9-a12d-f379475b03bd",
+      "id": "86ca0ae6-5e27-4c4e-a984-ddb96d48c586",
       "comment": "",
       "command": "click",
-      "target": "linkText=Crud",
+      "target": "linkText=CUENTAS",
       "targets": [
-        ["linkText=Crud", "linkText"],
-        ["css=.nav-item:nth-child(3) > .nav-link", "css:finder"],
-        ["xpath=//a[contains(text(),'Crud')]", "xpath:link"],
-        ["xpath=//a[contains(@href, '/Crud')]", "xpath:href"],
-        ["xpath=//li[3]/a", "xpath:position"],
-        ["xpath=//a[contains(.,'Crud')]", "xpath:innerText"]
+        ["linkText=CUENTAS", "linkText"],
+        ["css=.btn", "css:finder"],
+        ["xpath=//a[contains(text(),'CUENTAS')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/CRUD/Index')]", "xpath:href"],
+        ["xpath=//main/a", "xpath:position"],
+        ["xpath=//a[contains(.,'CUENTAS')]", "xpath:innerText"]
       ],
       "value": ""
     }, {
@@ -378,17 +378,17 @@
       "targets": [],
       "value": ""
     }, {
-      "id": "eff337a8-f2ae-4639-8a7c-5a9c58ec7180",
+      "id": "00c4fd1d-f146-426e-a339-9d01e0313219",
       "comment": "",
       "command": "click",
-      "target": "linkText=Crud",
+      "target": "linkText=CUENTAS",
       "targets": [
-        ["linkText=Crud", "linkText"],
-        ["css=.nav-item:nth-child(3) > .nav-link", "css:finder"],
-        ["xpath=//a[contains(text(),'Crud')]", "xpath:link"],
-        ["xpath=//a[contains(@href, '/Crud')]", "xpath:href"],
-        ["xpath=//li[3]/a", "xpath:position"],
-        ["xpath=//a[contains(.,'Crud')]", "xpath:innerText"]
+        ["linkText=CUENTAS", "linkText"],
+        ["css=.btn", "css:finder"],
+        ["xpath=//a[contains(text(),'CUENTAS')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/CRUD/Index')]", "xpath:href"],
+        ["xpath=//main/a", "xpath:position"],
+        ["xpath=//a[contains(.,'CUENTAS')]", "xpath:innerText"]
       ],
       "value": ""
     }, {
@@ -556,6 +556,45 @@
       "value": "${KEY_ENTER}"
     }, {
       "id": "4df46b07-b08d-406a-8d16-73942a43e3d5",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "40039cdd-5bc7-4d39-b53b-65b9ab20e46b",
+    "name": "_",
+    "commands": [{
+      "id": "0ff28084-5b76-45d7-b49c-f92febcde9b2",
+      "comment": "",
+      "command": "open",
+      "target": "https://localhost:44315/Home/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "1006b7c2-b461-4a3b-99e8-df7393504a03",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1050x703",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "6e2eb8d7-6d53-4c72-aa86-027cd9e12fff",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=CUENTAS",
+      "targets": [
+        ["linkText=CUENTAS", "linkText"],
+        ["css=.btn", "css:finder"],
+        ["xpath=//a[contains(text(),'CUENTAS')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/CRUD/Index')]", "xpath:href"],
+        ["xpath=//main/a", "xpath:position"],
+        ["xpath=//a[contains(.,'CUENTAS')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "5ba1bb24-ef63-43ca-8a57-2c0fee684466",
       "comment": "",
       "command": "close",
       "target": "",
